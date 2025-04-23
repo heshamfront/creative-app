@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سكوب - حلولك الذكية في جيبك</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+      <!-- مكتبة Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body class="font-arabic bg-white text-[#102E50]">
+
+<!-- Header -->
+<header class="bg-[#102E50] shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <a href="#" class="text-2xl font-bold">
+                    <span class="text-[#F5C45E]">سكوب</span>
+                    <span class="text-white">Scoop</span>
+                </a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8 space-x-reverse">
+                <a href="#home" class="text-white hover:text-[#F5C45E] transition-colors duration-300 font-medium">الرئيسية</a>
+                <a href="#features" class="text-white hover:text-[#F5C45E] transition-colors duration-300 font-medium">المميزات</a>
+                <a href="#how" class="text-white hover:text-[#F5C45E] transition-colors duration-300 font-medium">كيف يعمل</a>
+                <a href="#pricing" class="text-white hover:text-[#F5C45E] transition-colors duration-300 font-medium">الأسعار</a>
+                <a href="#CTA" class="text-white hover:text-[#F5C45E] transition-colors duration-300 font-medium">تواصل معنا</a>
+            </nav>
+
+            <!-- CTA Button - Desktop -->
+            <button class="hidden md:block bg-[#F5C45E] hover:bg-[#E78B48] text-[#102E50] font-bold px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
+                حمّل الآن
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-[#0c2541]">
+            <div class="flex flex-col space-y-4 px-4 pb-4 pt-2">
+                <a href="#home" class="text-white hover:text-[#F5C45E] py-2 transition-colors duration-300 border-b border-[#102E50]">الرئيسية</a>
+                <a href="#features" class="text-white hover:text-[#F5C45E] py-2 transition-colors duration-300 border-b border-[#102E50]">المميزات</a>
+                <a href="#how" class="text-white hover:text-[#F5C45E] py-2 transition-colors duration-300 border-b border-[#102E50]">كيف يعمل</a>
+                <a href="#pricing" class="text-white hover:text-[#F5C45E] py-2 transition-colors duration-300 border-b border-[#102E50]">الأسعار</a>
+                <a href="#CTA" class="text-white hover:text-[#F5C45E] py-2 transition-colors duration-300 border-b border-[#102E50]">تواصل معنا</a>
+                <button class="w-full bg-[#F5C45E] hover:bg-[#E78B48] text-[#102E50] font-bold py-2 px-4 rounded-lg transition-all duration-300 mt-2 mb-4">
+                    حمّل التطبيق
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<!-- Hero Section -->
+<section class="relative bg-[#102E50] overflow-hidden" id="home">
+    <!-- تأثيرات الخلفية -->
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="animate-[pulse_8s_infinite] absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#102E50] via-[#F5C45E] to-[#102E50] opacity-10"></div>
+    </div>
+  
+    <div class="container mx-auto px-4 py-24 md:py-32">
+      <div class="flex flex-col md:flex-row items-center">
+        <!-- النصوص والأزرار -->
+        <div class="md:w-1/2 text-center md:text-right mb-12 md:mb-0 animate__animated animate__fadeInRight animate__fast">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <span class="text-[#F5C45E]">سكوب</span> يغير طريقة 
+            <span class="block">استخدامك للتكنولوجيا</span>
+          </h1>
+          
+          <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-lg mx-auto md:mx-0">
+            حلول ذكية في جيبك، تجعل حياتك أسهل وأكثر إنتاجية مع واجهة بسيطة وسريعة
+          </p>
+          
+          <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 space-x-reverse">
+            <!-- زر الفيديو الجديد - أكثر سطوعًا -->
+            <button class="relative bg-gradient-to-br from-[#FFD700] to-[#F5C45E] text-[#102E50] font-bold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[0_0_25px_rgba(245,196,94,0.6)] group overflow-hidden">
+              <!-- طبقة توهج إضافية -->
+              <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+              <!-- تأثير اللمعة الذهبية -->
+              <div class="absolute top-0 left-0 w-full h-1 bg-white bg-opacity-40"></div>
+              <div class="relative flex items-center justify-center">
+                <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                </svg>
+                شاهد الفيديو
+              </div>
+            </button>
+            
+            <!-- زر التحميل (بقي كما هو) -->
+            <button class="bg-transparent border-2 border-[#F5C45E] hover:bg-[#F5C45E] hover:bg-opacity-20 text-white font-bold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
+              <div class="flex items-center justify-center">
+                <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+                حمل التطبيق
+              </div>
+            </button>
+          </div>
+          
+          <!-- إحصائيات (بقت كما هي) -->
+          <div class="flex flex-wrap justify-center md:justify-start mt-12 space-x-6 space-x-reverse">
+            <div class="text-center mb-4 md:mb-0">
+              <div class="text-3xl font-bold text-[#F5C45E] animate__animated animate__fadeInUp animate__delay-1s">+50K</div>
+              <div class="text-white">مستخدم نشط</div>
+            </div>
+            <div class="text-center mb-4 md:mb-0">
+              <div class="text-3xl font-bold text-[#F5C45E] animate__animated animate__fadeInUp animate__delay-2s">4.9</div>
+              <div class="text-white">تقييم في المتجر</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-[#F5C45E] animate__animated animate__fadeInUp animate__delay-3s">24/7</div>
+              <div class="text-white">دعم فني</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- صورة التطبيق (بقت كما هي) -->
+        <div class="md:w-1/2 animate__animated animate__fadeInLeft animate__fast">
+          <div class="relative max-w-md mx-auto">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW9iaWxlJTIwYXBwfGVufDB8fDB8fHww" 
+                 alt="تطبيق سكوب" 
+                 class="w-full rounded-2xl shadow-2xl transform hover:rotate-2 transition duration-500 z-10 relative">
+            
+            <div class="absolute -bottom-4 -left-4 w-full h-full bg-[#E78B48] rounded-2xl opacity-20"></div>
+            <div class="absolute -bottom-8 -left-8 w-full h-full bg-[#BE3D2A] rounded-2xl opacity-10"></div>
+            
+            <div class="absolute -top-8 -right-8 w-16 h-16 bg-[#F5C45E] rounded-full opacity-30 animate-[bounce_3s_infinite]"></div>
+            <div class="absolute bottom-0 -left-10 w-10 h-10 bg-[#E78B48] rounded-full opacity-30 animate-[bounce_4s_infinite]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- موجة تصميمية في الأسفل (بقت كما هي) -->
+    <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
+  </section>
+
+
+<!-- Logo Cloud Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <!-- العنوان والوصف -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-[#102E50] mb-4 animate__animated animate__fadeInDown">
+          <span class="text-[#E78B48]">شركاؤنا</span> و عملاؤنا
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-1s">
+          نفتخر بالتعاون مع أبرز العلامات التجارية الرائدة في المنطقة
+        </p>
+      </div>
+  
+      <!-- شبكة الشعارات -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center">
+        <!-- شعار 1 - STC -->
+        <div class="flex justify-center animate__animated animate__fadeIn animate__delay-2s">
+          <img src="https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHx8MA%3D%3D" 
+               alt="STC" 
+               class="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+        </div>
+        
+        <!-- شعار 2 - Alibaba -->
+        <div class="flex justify-center animate__animated animate__fadeIn animate__delay-3s">
+          <img src="https://plus.unsplash.com/premium_photo-1669075651723-15d660e5d8d4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWxpYmFiYSUyMGxvZ298ZW58MHx8MHx8fDA%3D" 
+               alt="Alibaba" 
+               class="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+        </div>
+        
+        <!-- شعار 3 - Careem -->
+        <div class="flex justify-center animate__animated animate__fadeIn animate__delay-4s">
+          <img src="https://media.istockphoto.com/id/1449332778/photo/letter-c-of-the-alphabet-made-with-green-and-blue-gradient.webp?a=1&b=1&s=612x612&w=0&k=20&c=UGJqXTkTeWdANvkuiGqzec09T5p1qmKCYOFKKAd15cc=" 
+               alt="Careem" 
+               class="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+        </div>
+        
+        <!-- شعار 4 - Elm -->
+        <div class="flex justify-center animate__animated animate__fadeIn animate__delay-5s">
+          <img src="https://media.istockphoto.com/id/1325037781/photo/hornbeam-round-grown-tree.webp?a=1&b=1&s=612x612&w=0&k=20&c=I3Lf5-Bz91Fn8FKq5XbyC4HcTZAy-zMgbVaaBiV6ctU=" 
+               alt="Elm" 
+               class="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+        </div>
+        
+        <!-- شعار 5 - Noon -->
+        <div class="flex justify-center animate__animated animate__fadeIn animate__delay-6s">
+          <img src="https://plus.unsplash.com/premium_photo-1683141182084-2e4997f3ec5b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bm9vbiUyMGxvZ298ZW58MHx8MHx8fDA%3D" 
+               alt="Noon" 
+               class="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+        </div>
+        
+        <!-- شعار 6 - Saudi Airlines -->
+        <div class="flex justify-center animate__animated animate__fadeIn animate__delay-2s">
+          <img src="https://plus.unsplash.com/premium_photo-1668902219196-f1cf3c7250eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fFNhdWRpJTIwQWlybGluZXMlMjBsb2dvfGVufDB8fDB8fHww" 
+               alt="Saudi Airlines" 
+               class="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+        </div>
+        
+        <!-- شعار 7 - Al Rajhi Bank -->
+        <div class="flex justify-center animate__animated animate__fadeIn animate__delay-3s">
+          <img src="https://plus.unsplash.com/premium_photo-1681433426886-3d6d17f79d53?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8QWwlMjBSYWpoaSUyMEJhbmslMjBsb2dvfGVufDB8fDB8fHww" 
+               alt="Al Rajhi Bank" 
+               class="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+        </div>
+        
+        <!-- شعار 8 - Jarir -->
+        <div class="flex justify-center animate__animated animate__fadeIn animate__delay-4s">
+          <img src="https://images.unsplash.com/photo-1739055547874-4fe440a2bfea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8SmFyaXIlMjBsb2dvfGVufDB8fDB8fHww" 
+               alt="Jarir Bookstore" 
+               class="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+        </div>
+        
+        <!-- شعار 9 - HungerStation -->
+        <div class="flex justify-center animate__animated animate__fadeIn animate__delay-5s">
+          <img src="https://www.wikimedia.org/static/images/wmf-logo.png" 
+               alt="HungerStation" 
+               class="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+        </div>
+        
+        <!-- شعار 10 - Nahdi -->
+        <div class="flex justify-center animate__animated animate__fadeIn animate__delay-6s">
+          <img src="https://images.unsplash.com/photo-1653499676737-becf2c9562c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TmFoZGklMjBsb2dvfGVufDB8fDB8fHww" 
+               alt="Nahdi Medical" 
+               class="h-12 object-contain opacity-80 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+        </div>
+      </div>
+  
+      <!-- نص إضافي -->
+      <div class="text-center mt-16 animate__animated animate__fadeIn animate__delay-7s">
+        <p class="text-gray-500 mb-6">هل تريد أن تصبح شريكنا التالي؟</p>
+        <button class="bg-[#102E50] hover:bg-[#0c2541] text-white font-bold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md">
+          تواصل مع فريق المبيعات
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+<section class="py-20 bg-gradient-to-b from-[#f8fafc] to-white" id="features">
+    <div class="container mx-auto px-4">
+      <!-- العنوان والوصف -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#102E50] mb-4 animate__animated animate__fadeInDown">
+          ميزات <span class="text-[#E78B48]">تغير قواعد اللعبة</span>
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-1s">
+          اكتشف القوة الكامنة في أدواتنا المصممة لتحقيق الإنجاز
+        </p>
+      </div>
+  
+      <!-- بطاقات الميزات -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- الميزة 1 -->
+        <div class="feature-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2 animate__animated animate__fadeInUp animate__delay-2s">
+          <div class="h-48 bg-gradient-to-r from-[#102E50] to-[#0c2541] flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')] opacity-10"></div>
+            <div class="text-[#F5C45E] text-6xl z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-16 h-16">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-[#F5C45E] animate-[progress_3s_ease-in-out_infinite]"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-[#102E50] mb-3">سرعة فائقة</h3>
+            <p class="text-gray-600 mb-4">أداء خارق مع وقت تحميل أقل من ثانية، مهما كان حجم بياناتك</p>
+            <a href="#" class="inline-flex items-center text-[#E78B48] hover:text-[#BE3D2A] font-medium transition-colors">
+              اكتشف المزيد
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+  
+        <!-- الميزة 2 -->
+        <div class="feature-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2 animate__animated animate__fadeInUp animate__delay-3s">
+          <div class="h-48 bg-gradient-to-r from-[#E78B48] to-[#d87d3a] flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/crissxcross.png')] opacity-10"></div>
+            <div class="text-white text-6xl z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-16 h-16">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-white animate-[progress_3s_ease-in-out_infinite] animation-delay-500"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-[#102E50] mb-3">حماية متقدمة</h3>
+            <p class="text-gray-600 mb-4">تشفير من الدرجة العسكرية يحمي بياناتك من أي تهديدات</p>
+            <a href="#" class="inline-flex items-center text-[#E78B48] hover:text-[#BE3D2A] font-medium transition-colors">
+              اكتشف المزيد
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+  
+        <!-- الميزة 3 -->
+        <div class="feature-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-2 animate__animated animate__fadeInUp animate__delay-4s">
+          <div class="h-48 bg-gradient-to-r from-[#F5C45E] to-[#e6b84e] flex items-center justify-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagonal-striped-brick.png')] opacity-10"></div>
+            <div class="text-[#102E50] text-6xl z-10">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-16 h-16">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              </svg>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-[#102E50] animate-[progress_3s_ease-in-out_infinite] animation-delay-700"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-[#102E50] mb-3">لوحة تحكم ذكية</h3>
+            <p class="text-gray-600 mb-4">إحصائيات وتحليلات حية لمتابعة أداءك في الوقت الفعلي</p>
+            <a href="#" class="inline-flex items-center text-[#E78B48] hover:text-[#BE3D2A] font-medium transition-colors">
+              اكتشف المزيد
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- زر عرض جميع الميزات -->
+      <div class="text-center mt-12 animate__animated animate__fadeIn animate__delay-5s">
+        <button class="relative bg-[#102E50] hover:bg-[#0c2541] text-white font-bold px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 group overflow-hidden">
+          <span class="relative z-10">اكتشف جميع الميزات</span>
+          <span class="absolute inset-0 bg-gradient-to-r from-[#F5C45E] to-[#E78B48] opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+ <!-- App Showcase Section -->
+<section class="py-20 bg-[#102E50] text-white overflow-hidden">
+    <!-- تأثيرات خلفية ديناميكية -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-64 h-64 bg-[#F5C45E] rounded-full filter blur-3xl opacity-20 animate-[float_6s_infinite]"></div>
+      <div class="absolute bottom-0 right-0 w-64 h-64 bg-[#E78B48] rounded-full filter blur-3xl opacity-20 animate-[float_8s_infinite]"></div>
+    </div>
+  
+    <div class="container mx-auto px-4 relative">
+      <!-- العنوان والوصف -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 animate__animated animate__fadeInDown">
+          <span class="text-[#F5C45E]">جولة داخل</span> التطبيق
+        </h2>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-1s">
+          اكتشف واجهة مستخدم بديهية مصممة لتجربة لا تُنسى
+        </p>
+      </div>
+  
+      <!-- عرض التطبيق -->
+      <div class="flex flex-col lg:flex-row items-center">
+        <!-- شاشات التطبيق -->
+        <div class="lg:w-1/2 mb-12 lg:mb-0 relative animate__animated animate__fadeInLeft">
+          <!-- الهاتف الأساسي -->
+          <div class="relative mx-auto w-72 h-[500px]">
+            <!-- إطار الهاتف -->
+            <div class="absolute inset-0 rounded-[40px] border-8 border-[#2a4365] shadow-2xl overflow-hidden z-10">
+              <!-- شريحة الشاشة -->
+              <div class="swiper-container h-full w-full">
+                <div class="swiper-wrapper">
+                  <!-- شريحة 1 -->
+                  <div class="swiper-slide bg-gradient-to-br from-[#0c2541] to-[#102E50] flex items-center justify-center">
+                    <img src="https://media.istockphoto.com/id/1305305520/photo/mockup-of-isolated-mobile-phone-with-home-screen-templates.webp?a=1&b=1&s=612x612&w=0&k=20&c=4muDYCbt2wEbZmdvp_BFyiXPhxlamQsac-_Foooy7ek=" 
+                         alt="واجهة التطبيق" 
+                         class="w-full h-full object-cover">
+                  </div>
+                  <!-- شريحة 2 -->
+                  <div class="swiper-slide bg-gradient-to-br from-[#E78B48] to-[#d87d3a] flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1663153203126-08bbadc178ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1vYmlsZSUyMGFwcCUyMHNjcmVlbiUyMGZ1bGwlMjBmaWxsfGVufDB8fDB8fHww" 
+                         alt="واجهة التطبيق" 
+                         class="w-full h-full object-cover">
+                  </div>
+                  <!-- شريحة 3 -->
+                  <div class="swiper-slide bg-gradient-to-br from-[#F5C45E] to-[#e6b84e] flex items-center justify-center">
+                    <img src="https://media.istockphoto.com/id/1305305520/photo/mockup-of-isolated-mobile-phone-with-home-screen-templates.webp?a=1&b=1&s=612x612&w=0&k=20&c=4muDYCbt2wEbZmdvp_BFyiXPhxlamQsac-_Foooy7ek=" 
+                         alt="واجهة التطبيق" 
+                         class="w-full h-full object-cover">
+                  </div>
+                </div>
+                <!-- نقاط التمرير -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <!-- تأثيرات حول الهاتف -->
+            <div class="absolute -inset-4 rounded-[50px] bg-[#F5C45E] opacity-10 animate-[pulse_4s_infinite]"></div>
+            <div class="absolute -inset-6 rounded-[60px] bg-[#E78B48] opacity-5 animate-[pulse_5s_infinite]"></div>
+          </div>
+  
+          <!-- شاشات صغيرة متحركة -->
+          <div class="hidden lg:block absolute -left-20 top-1/4 w-40 h-[280px] animate-[float_5s_infinite]">
+            <div class="relative w-full h-full">
+              <img src="https://media.istockphoto.com/id/1583937207/photo/using-system-ai-chatbot-in-computer-or-mobile-application-chatbot-conversation-ai-artificial.webp?a=1&b=1&s=612x612&w=0&k=20&c=o5KOtKuyHnlSu4pJSlLJqBjVdvo29aKEzn0vAsfEu9U=" 
+                   alt="واجهة التطبيق" 
+                   class="absolute inset-0 rounded-2xl border-4 border-white shadow-xl">
+              <div class="absolute -inset-2 rounded-2xl bg-[#F5C45E] opacity-20"></div>
+            </div>
+          </div>
+  
+          <div class="hidden lg:block absolute -right-20 bottom-1/4 w-40 h-[280px] animate-[float_7s_infinite]">
+            <div class="relative w-full h-full">
+              <img src="https://cdn.dribbble.com/users/1787323/screenshots/11310802/media/480a7d5b0b5e37e3a1a5b8b8.png" 
+                   alt="واجهة التطبيق" 
+                   class="absolute inset-0 rounded-2xl border-4 border-white shadow-xl">
+              <div class="absolute -inset-2 rounded-2xl bg-[#E78B48] opacity-20"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- الميزات -->
+        <div class="lg:w-1/2 lg:pl-12 animate__animated animate__fadeInRight">
+          <div class="space-y-8">
+            <!-- ميزة 1 -->
+            <div class="feature-item group">
+              <div class="flex items-start">
+                <div class="bg-[#F5C45E] bg-opacity-20 text-[#F5C45E] p-3 rounded-lg mr-4 group-hover:bg-opacity-30 transition-all duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2 group-hover:text-[#F5C45E] transition-colors duration-300">أداء سريع</h3>
+                  <p class="text-gray-300">تصميم خفيف الوزن يحقق أسرع تجربة استخدام ممكنة</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- ميزة 2 -->
+            <div class="feature-item group">
+              <div class="flex items-start">
+                <div class="bg-[#E78B48] bg-opacity-20 text-[#E78B48] p-3 rounded-lg mr-4 group-hover:bg-opacity-30 transition-all duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2 group-hover:text-[#E78B48] transition-colors duration-300">حماية كاملة</h3>
+                  <p class="text-gray-300">تشفير متقدم يحافظ على خصوصية بياناتك</p>
+                </div>
+              </div>
+            </div>
+  
+            <!-- ميزة 3 -->
+            <div class="feature-item group">
+              <div class="flex items-start">
+                <div class="bg-[#BE3D2A] bg-opacity-20 text-[#BE3D2A] p-3 rounded-lg mr-4 group-hover:bg-opacity-30 transition-all duration-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold mb-2 group-hover:text-[#BE3D2A] transition-colors duration-300">لوحة تحكم</h3>
+                  <p class="text-gray-300">إحصائيات وتقارير مفصلة لمتابعة أدائك</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- أزرار التحميل -->
+          <div class="flex flex-col sm:flex-row gap-4 mt-12">
+            <button class="bg-[#F5C45E] hover:bg-[#e6b84e] text-[#102E50] font-bold px-6 py-3 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-105">
+              <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.3-.15-.68-.04-.85.26l-1.88 3.24c-2.86-1.21-6.08-1.21-8.94 0L5.65 5.71c-.18-.3-.55-.41-.85-.26-.3.15-.42.54-.26.85L6.4 9.48C3.3 11.25 1.28 14.44 1 18h22c-.28-3.56-2.3-6.75-5.4-8.52zM7 15.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm10 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"/>
+              </svg>
+              حمل للأندرويد
+            </button>
+            <button class="bg-white hover:bg-gray-100 text-[#102E50] font-bold px-6 py-3 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-105">
+              <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+              </svg>
+              حمل للآيفون
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- how it work section -->
+  <section class="py-16 bg-white" id="how">
+    <div class="container mx-auto px-4">
+      <!-- العنوان -->
+      <h2 class="text-4xl font-bold text-center mb-16 text-[#102E50]">
+        How It Works
+      </h2>
+  
+      <!-- الخطوات -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- الخطوة 1 -->
+        <div 
+          class="bg-[#102E50] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-white"
+        >
+          <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-[#F5C45E] flex items-center justify-center text-[#102E50] font-bold text-2xl">
+            1
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-center">Download the App</h3>
+          <p class="text-gray-200 text-center">
+            Install the app from Google Play or Apple Store in just a few seconds.
+          </p>
+        </div>
+  
+        <!-- الخطوة 2 -->
+        <div 
+          class="bg-[#E78B48] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-white"
+        >
+          <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-[#BE3D2A] flex items-center justify-center text-white font-bold text-2xl">
+            2
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-center">Create an Account</h3>
+          <p class="text-gray-100 text-center">
+            Sign up with your email or phone number to get started.
+          </p>
+        </div>
+  
+        <!-- الخطوة 3 -->
+        <div 
+          class="bg-[#BE3D2A] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-white"
+        >
+          <div class="w-16 h-16 mb-4 mx-auto rounded-full bg-[#F5C45E] flex items-center justify-center text-[#102E50] font-bold text-2xl">
+            3
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-center">Enjoy the Features</h3>
+          <p class="text-gray-200 text-center">
+            Start exploring all the amazing features tailored just for you!
+          </p>
+        </div>
+      </div>
+  
+      <!-- زر Call-to-Action -->
+      <div class="mt-12 text-center">
+        <button 
+          class="bg-[#F5C45E] hover:bg-[#E78B48] text-[#102E50] font-bold py-3 px-8 rounded-full transition-colors duration-300 animate-bounce hover:animate-none"
+        >
+          Get Started Now
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonials section -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <!-- العنوان -->
+    <h2 class="text-4xl font-bold text-center mb-4 text-[#102E50]">
+      What Our Users Say
+    </h2>
+    <p class="text-center text-[#E78B48] mb-12 max-w-2xl mx-auto">
+      Trusted by thousands of happy customers around the world.
+    </p>
+
+    <!-- آراء العملاء -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- رأي 1 -->
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-[#F5C45E]">
+        <div class="flex items-center mb-4">
+          <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User" class="w-12 h-12 rounded-full mr-4 border-2 border-[#BE3D2A]">
+          <div>
+            <h4 class="font-bold text-[#102E50]">سارة أحمد</h4>
+            <div class="flex text-[#F5C45E]">
+              ★ ★ ★ ★ ★
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600 italic">
+          "التطبيق غيّر طريقة تعاملي مع المهام اليومية! سهل الاستخدام وسريع جدًا."
+        </p>
+      </div>
+
+      <!-- رأي 2 -->
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-[#E78B48]">
+        <div class="flex items-center mb-4">
+          <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User" class="w-12 h-12 rounded-full mr-4 border-2 border-[#F5C45E]">
+          <div>
+            <h4 class="font-bold text-[#102E50]">محمد علي</h4>
+            <div class="flex text-[#F5C45E]">
+              ★ ★ ★ ★ ☆
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600 italic">
+          "أفضل تطبيق استخدمته هذا العام! الدعم الفني رائع."
+        </p>
+      </div>
+
+      <!-- رأي 3 -->
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] border-l-4 border-[#BE3D2A]">
+        <div class="flex items-center mb-4">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-12 h-12 rounded-full mr-4 border-2 border-[#102E50]">
+          <div>
+            <h4 class="font-bold text-[#102E50]">نورا خالد</h4>
+            <div class="flex text-[#F5C45E]">
+              ★ ★ ★ ★ ★
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600 italic">
+          "التصميم جميل والخصائص متكاملة. أنصح الجميع به!"
+        </p>
+      </div>
+    </div>
+
+    <!-- زر Call-to-Action -->
+    <div class="mt-12 text-center">
+      <button class="bg-[#102E50] hover:bg-[#BE3D2A] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+        انضم إلى الآلاف السعداء!
+      </button>
+    </div>
+  </div>
+</section>
+<!-- pricing section -->
+<section class="py-16 bg-white" id="pricing">
+    <div class="container mx-auto px-4">
+      <!-- العنوان -->
+      <h2 class="text-4xl font-bold text-center mb-4 text-[#102E50]">
+        Pricing Plans
+      </h2>
+      <p class="text-center text-[#E78B48] mb-12 max-w-2xl mx-auto">
+        Choose the perfect plan for your needs. No hidden fees!
+      </p>
+  
+      <!-- خطط التسعير -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+        <!-- الخطة الأساسية -->
+        <div 
+          class="bg-white p-8 rounded-xl shadow-lg border-2 border-[#102E50] hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+        >
+          <h3 class="text-2xl font-bold text-[#102E50] mb-2">Basic</h3>
+          <p class="text-gray-600 mb-6">Ideal for individuals</p>
+          <div class="text-4xl font-bold mb-6 text-[#102E50]">
+            $9<span class="text-lg text-gray-500">/month</span>
+          </div>
+          <ul class="mb-8 space-y-3">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-[#F5C45E]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>10 Projects</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-[#F5C45E]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Basic Support</span>
+            </li>
+            <li class="flex items-center text-gray-400">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+              <span>No Analytics</span>
+            </li>
+          </ul>
+          <button class="w-full bg-[#102E50] hover:bg-[#BE3D2A] text-white py-3 px-4 rounded-lg transition-colors duration-300">
+            Get Started
+          </button>
+        </div>
+  
+        <!-- الخطة الاحترافية (مميزة) -->
+        <div 
+          class="bg-gradient-to-br from-[#F5C45E] to-[#E78B48] p-8 rounded-xl shadow-2xl relative hover:shadow-3xl transition-all duration-300 hover:-translate-y-3 animate-pulse"
+        >
+          <!-- شعار "الأكثر شعبية" -->
+          <div class="absolute top-0 right-0 bg-[#BE3D2A] text-white px-4 py-1 rounded-bl-lg rounded-tr-lg text-sm font-bold">
+            Most Popular
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-2">Pro</h3>
+          <p class="text-white/90 mb-6">Perfect for small teams</p>
+          <div class="text-4xl font-bold mb-6 text-white">
+            $29<span class="text-lg text-white/80">/month</span>
+          </div>
+          <ul class="mb-8 space-y-3">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-white">50 Projects</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-white">Priority Support</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="text-white">Advanced Analytics</span>
+            </li>
+          </ul>
+          <button class="w-full bg-[#102E50] hover:bg-[#BE3D2A] text-white py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105">
+            Try It Free
+          </button>
+        </div>
+  
+        <!-- الخطة المميزة -->
+        <div 
+          class="bg-white p-8 rounded-xl shadow-lg border-2 border-[#BE3D2A] hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+        >
+          <h3 class="text-2xl font-bold text-[#102E50] mb-2">Premium</h3>
+          <p class="text-gray-600 mb-6">For large enterprises</p>
+          <div class="text-4xl font-bold mb-6 text-[#102E50]">
+            $99<span class="text-lg text-gray-500">/month</span>
+          </div>
+          <ul class="mb-8 space-y-3">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-[#F5C45E]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Unlimited Projects</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-[#F5C45E]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>24/7 VIP Support</span>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2 text-[#F5C45E]" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Full Analytics Suite</span>
+            </li>
+          </ul>
+          <button class="w-full bg-[#102E50] hover:bg-[#BE3D2A] text-white py-3 px-4 rounded-lg transition-colors duration-300">
+            Contact Sales
+          </button>
+        </div>
+      </div>
+  
+      <!-- ملاحظة -->
+      <p class="text-center mt-12 text-gray-500">
+        Need a custom plan? <a href="#" class="text-[#E78B48] hover:underline">Contact us</a>.
+      </p>
+    </div>
+  </section>
+<!-- FAQ section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- العنوان -->
+      <h2 class="text-4xl font-bold text-center mb-4 text-[#102E50]">
+        Frequently Asked Questions
+      </h2>
+      <p class="text-center text-[#E78B48] mb-12 max-w-2xl mx-auto">
+        Find answers to common questions about our app.
+      </p>
+  
+      <!-- الأسئلة -->
+      <div class="max-w-3xl mx-auto space-y-4">
+        <!-- السؤال 1 -->
+        <div 
+          x-data="{ open: false }" 
+          class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+        >
+          <button 
+            @click="open = !open" 
+            class="w-full flex justify-between items-center p-6 text-left focus:outline-none"
+          >
+            <h3 class="text-lg font-semibold text-[#102E50]">
+              How do I download the app?
+            </h3>
+            <svg 
+              :class="{'rotate-180': open}" 
+              class="w-6 h-6 text-[#F5C45E] transition-transform duration-300" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div 
+            x-show="open" 
+            x-collapse 
+            class="px-6 pb-6 text-gray-600 transition-all duration-300 ease-in-out"
+          >
+            <p>
+              You can download our app from the <span class="text-[#BE3D2A] font-medium">Apple App Store</span> or <span class="text-[#BE3D2A] font-medium">Google Play Store</span>. Just search for our app name and click "Install".
+            </p>
+          </div>
+        </div>
+  
+        <!-- السؤال 2 -->
+        <div 
+          x-data="{ open: false }" 
+          class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+        >
+          <button 
+            @click="open = !open" 
+            class="w-full flex justify-between items-center p-6 text-left focus:outline-none"
+          >
+            <h3 class="text-lg font-semibold text-[#102E50]">
+              Is there a free trial available?
+            </h3>
+            <svg 
+              :class="{'rotate-180': open}" 
+              class="w-6 h-6 text-[#F5C45E] transition-transform duration-300" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div 
+            x-show="open" 
+            x-collapse 
+            class="px-6 pb-6 text-gray-600 transition-all duration-300 ease-in-out"
+          >
+            <p>
+              Yes! We offer a <span class="text-[#E78B48] font-medium">14-day free trial</span> for all new users. No credit card required.
+            </p>
+          </div>
+        </div>
+  
+        <!-- السؤال 3 -->
+        <div 
+          x-data="{ open: false }" 
+          class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+        >
+          <button 
+            @click="open = !open" 
+            class="w-full flex justify-between items-center p-6 text-left focus:outline-none"
+          >
+            <h3 class="text-lg font-semibold text-[#102E50]">
+              How can I contact support?
+            </h3>
+            <svg 
+              :class="{'rotate-180': open}" 
+              class="w-6 h-6 text-[#F5C45E] transition-transform duration-300" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div 
+            x-show="open" 
+            x-collapse 
+            class="px-6 pb-6 text-gray-600 transition-all duration-300 ease-in-out"
+          >
+            <p>
+              Our support team is available 24/7 via <span class="text-[#102E50] font-medium">live chat</span> in the app or by email at <span class="text-[#102E50] font-medium">support@example.com</span>.
+            </p>
+          </div>
+        </div>
+  
+        <!-- السؤال 4 -->
+        <div 
+          x-data="{ open: false }" 
+          class="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+        >
+          <button 
+            @click="open = !open" 
+            class="w-full flex justify-between items-center p-6 text-left focus:outline-none"
+          >
+            <h3 class="text-lg font-semibold text-[#102E50]">
+              Can I cancel my subscription anytime?
+            </h3>
+            <svg 
+              :class="{'rotate-180': open}" 
+              class="w-6 h-6 text-[#F5C45E] transition-transform duration-300" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div 
+            x-show="open" 
+            x-collapse 
+            class="px-6 pb-6 text-gray-600 transition-all duration-300 ease-in-out"
+          >
+            <p>
+              Absolutely! You can cancel your subscription anytime from your account settings. <span class="text-[#BE3D2A] font-medium">No cancellation fees</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- زر إضافي -->
+      <div class="mt-12 text-center">
+        <button class="bg-[#102E50] hover:bg-[#E78B48] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 animate-bounce hover:animate-none">
+          Still have questions? Contact Us
+        </button>
+      </div>
+    </div>
+  </section>
+<!-- (press / media) section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <!-- العنوان -->
+      <h2 class="text-4xl font-bold text-center mb-4 text-[#102E50]">
+        Press & Media
+      </h2>
+      <p class="text-center text-[#E78B48] mb-12 max-w-2xl mx-auto">
+        Featured in top media outlets and download our press resources.
+      </p>
+  
+      <!-- شريط الشركاء (Slider) -->
+      <div class="py-8 mb-12 bg-gray-50 rounded-xl">
+        <div class="flex overflow-x-auto space-x-12 px-8 py-6 hide-scrollbar">
+          <!-- شعار 1 - Forbes -->
+          <div class="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Forbes_logo.svg/2560px-Forbes_logo.svg.png" alt="Forbes" class="h-12 opacity-80 hover:opacity-100"> -->
+          </div>
+          <!-- شعار 2 - TechCrunch -->
+          <div class="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/TechCrunch_logo.svg/2560px-TechCrunch_logo.svg.png" alt="TechCrunch" class="h-12 opacity-80 hover:opacity-100">
+          </div>
+          <!-- شعار 3 - Wired -->
+          <div class="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Wired_logo.svg/1280px-Wired_logo.svg.png" alt="Wired" class="h-12 opacity-80 hover:opacity-100">
+          </div>
+          <!-- شعار 4 - CNN -->
+          <div class="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/CNN_International_logo.svg/1280px-CNN_International_logo.svg.png" alt="CNN" class="h-12 opacity-80 hover:opacity-100">
+          </div>
+          <!-- شعار 5 - Bloomberg -->
+          <!-- <div class="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500"> -->
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Bloomberg_logo.svg/1280px-Bloomberg_logo.svg.png" alt="Bloomberg" class="h-12 opacity-80 hover:opacity-100"> -->
+          </div>
+          <!-- شعار 6 - The Verge -->
+          <!-- <div class="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-500"> -->
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/The_Verge_logo.svg/1280px-The_Verge_logo.svg.png" alt="The Verge" class="h-12 opacity-80 hover:opacity-100"> -->
+          </div>
+        </div>
+      </div>
+  
+      <!-- أخبار وتغطيات -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <!-- خبر 1 - Forbes -->
+        <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+          <div class="h-48 bg-[#102E50] flex items-center justify-center relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1559701339-4f49d0b07462?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hhbmdpbmclMjB0aGUlMjBnYW1lfGVufDB8fDB8fHww" alt="Forbes Cover" class="w-full h-full object-cover absolute">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#102E50] to-transparent opacity-70"></div>
+            <span class="text-white text-lg font-bold z-10">Featured in Forbes</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-[#102E50] mb-2">How Our App is Changing the Game</h3>
+            <p class="text-gray-600 mb-4">A deep dive into our innovative features and user success stories.</p>
+            <a href="#" class="text-[#E78B48] hover:text-[#BE3D2A] font-medium transition-colors duration-300">Read Article →</a>
+          </div>
+        </div>
+  
+        <!-- خبر 2 - TechCrunch -->
+        <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+          <div class="h-48 bg-[#BE3D2A] flex items-center justify-center relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="TechCrunch Cover" class="w-full h-full object-cover absolute">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#BE3D2A] to-transparent opacity-70"></div>
+            <span class="text-white text-lg font-bold z-10">TechCrunch Review</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-[#102E50] mb-2">The Must-Have App of 2025</h3>
+            <p class="text-gray-600 mb-4">Why experts are calling our app a breakthrough in productivity.</p>
+            <a href="#" class="text-[#E78B48] hover:text-[#BE3D2A] font-medium transition-colors duration-300">Read Article →</a>
+          </div>
+        </div>
+  
+        <!-- فيديو -->
+        <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+          <div class="h-48 bg-[#F5C45E] flex items-center justify-center relative cursor-pointer group overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Video Thumbnail" class="w-full h-full object-cover absolute">
+            <div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300"></div>
+            <!-- زر التشغيل -->
+            <div class="w-16 h-16 bg-[#BE3D2A] rounded-full flex items-center justify-center z-10 transform group-hover:scale-110 transition-all duration-300">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M6.3 2.841A1.5 1.5 0 004 4.11v11.78a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-[#102E50] mb-2">Product Demo Video</h3>
+            <p class="text-gray-600 mb-4">Watch how our app works in under 2 minutes.</p>
+            <a href="#" class="text-[#E78B48] hover:text-[#BE3D2A] font-medium transition-colors duration-300">Watch Now →</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Media Kit -->
+      <div class="bg-gradient-to-r from-[#102E50] to-[#BE3D2A] rounded-xl p-8 text-white">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-2xl font-bold mb-2">Press Resources</h3>
+            <p>Download high-resolution logos, screenshots, and press releases.</p>
+          </div>
+          <button class="bg-[#F5C45E] hover:bg-[#E78B48] text-[#102E50] font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+            Download Media Kit
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- final CTA -->
+  <section class="py-20 bg-gradient-to-br from-[#102E50] to-[#1A4B7A] relative overflow-hidden" id="CTA">
+    <!-- عناصر زخرفية -->
+    <div class="absolute top-0 left-0 w-full h-full opacity-10">
+      <div class="absolute top-20 left-10 w-32 h-32 rounded-full bg-[#F5C45E] mix-blend-overlay animate-float"></div>
+      <div class="absolute bottom-10 right-20 w-40 h-40 rounded-full bg-[#E78B48] mix-blend-overlay animate-float-delay"></div>
+    </div>
+  
+    <div class="container mx-auto px-4 text-center relative z-10 pb-16"> <!-- زيادة padding-bottom -->
+      <!-- العنوان الرئيسي -->
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 animate-fade-in">
+        جاهز لبدء رحلتك معنا؟
+      </h2>
+      
+      <!-- الوصف -->
+      <p class="text-xl text-[#F5C45E] mb-10 max-w-2xl mx-auto animate-fade-in delay-100">
+        انضم إلى أكثر من 50,000 عميل راضٍ واستمتع بتجربة لا تُنسى.
+      </p>
+  
+      <!-- الأزرار -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12 animate-fade-in delay-200">
+        <button class="bg-[#F5C45E] hover:bg-[#E78B48] text-[#102E50] font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+          ابدأ التجربة المجانية
+        </button>
+        <button class="bg-transparent hover:bg-white/10 text-white border-2 border-white py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+          تواصل مع المبيعات
+        </button>
+      </div>
+  
+      <!-- ميزات إضافية -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto animate-fade-in delay-300">
+        <div class="flex items-center justify-center space-x-2">
+          <svg class="w-6 h-6 text-[#F5C45E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          <span class="text-white">لا حاجة لبطاقة ائتمان</span>
+        </div>
+        <div class="flex items-center justify-center space-x-2">
+          <svg class="w-6 h-6 text-[#F5C45E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          <span class="text-white">14 يومًا تجريبيًا</span>
+        </div>
+        <div class="flex items-center justify-center space-x-2">
+          <svg class="w-6 h-6 text-[#F5C45E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          <span class="text-white">دعم فني 24/7</span>
+        </div>
+        <div class="flex items-center justify-center space-x-2">
+          <svg class="w-6 h-6 text-[#F5C45E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          <span class="text-white">إلغاء في أي وقت</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- موجات زخرفية معدلة -->
+    <div class="absolute bottom-0 left-0 w-full h-24"> <!-- تقليل الارتفاع -->
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="fill-current text-white h-full w-full">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".15"></path> <!-- تقليل العتامة -->
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".25"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" opacity=".35"></path>
+      </svg>
+    </div>
+  
+
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-[#102E50] text-white pt-16 pb-8 relative overflow-hidden">
+    <!-- موجات علوية -->
+    <div class="absolute top-0 left-0 w-full h-24 transform -translate-y-1/2">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="fill-current text-[#102E50] h-full w-full">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"></path>
+      </svg>
+    </div>
+  
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <!-- العمود 1: معلومات الشركة -->
+        <div>
+          <div class="flex items-center mb-6">
+            <div class="w-10 h-10 rounded-full bg-[#F5C45E] mr-3 flex items-center justify-center text-[#102E50] font-bold text-xl">T</div>
+            <span class="text-2xl font-bold">TechApp</span>
+          </div>
+          <p class="text-gray-300 mb-6">نحن نبتكر حلولًا رقمية تساعدك على تحقيق أهدافك بسهولة وكفاءة.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-[#1A4B7A] flex items-center justify-center hover:bg-[#F5C45E] hover:text-[#102E50] transition-colors duration-300">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-[#1A4B7A] flex items-center justify-center hover:bg-[#F5C45E] hover:text-[#102E50] transition-colors duration-300">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-[#1A4B7A] flex items-center justify-center hover:bg-[#F5C45E] hover:text-[#102E50] transition-colors duration-300">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-[#1A4B7A] flex items-center justify-center hover:bg-[#F5C45E] hover:text-[#102E50] transition-colors duration-300">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+  
+        <!-- العمود 2: روابط سريعة -->
+        <div>
+          <h3 class="text-xl font-bold mb-6 text-[#F5C45E]">روابط سريعة</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-300 hover:text-[#E78B48] transition-colors duration-300">الصفحة الرئيسية</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-[#E78B48] transition-colors duration-300">الميزات</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-[#E78B48] transition-colors duration-300">الأسعار</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-[#E78B48] transition-colors duration-300">الأسئلة الشائعة</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-[#E78B48] transition-colors duration-300">المدونة</a></li>
+          </ul>
+        </div>
+  
+        <!-- العمود 3: معلومات الاتصال -->
+        <div>
+          <h3 class="text-xl font-bold mb-6 text-[#F5C45E]">تواصل معنا</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-[#E78B48] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span class="text-gray-300">الرياض، المملكة العربية السعودية</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-[#E78B48] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <span class="text-gray-300">+966 12 345 6789</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-[#E78B48] mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span class="text-gray-300">info@techapp.com</span>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- العمود 4: النشرة البريدية -->
+        <div>
+          <h3 class="text-xl font-bold mb-6 text-[#F5C45E]">النشرة البريدية</h3>
+          <p class="text-gray-300 mb-4">اشترك ليصلك كل جديد عن تطويراتنا وعروضنا الحصرية.</p>
+          <form class="flex flex-col sm:flex-row gap-3">
+            <input type="email" placeholder="بريدك الإلكتروني" class="flex-grow px-4 py-3 rounded-lg bg-[#1A4B7A] border border-[#2D5F8B] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#F5C45E]">
+            <button type="submit" class="bg-[#F5C45E] hover:bg-[#E78B48] text-[#102E50] font-bold py-3 px-6 rounded-lg transition-colors duration-300 whitespace-nowrap">
+              اشتراك
+            </button>
+          </form>
+        </div>
+      </div>
+  
+      <!-- حقوق النشر -->
+      <div class="border-t border-[#1A4B7A] pt-8 mt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 mb-4 md:mb-0">© 2023 TechApp. جميع الحقوق محفوظة.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-[#E78B48] transition-colors duration-300">شروط الخدمة</a>
+          <a href="#" class="text-gray-400 hover:text-[#E78B48] transition-colors duration-300">سياسة الخصوصية</a>
+          <a href="#" class="text-gray-400 hover:text-[#E78B48] transition-colors duration-300">ملفات تعريف الارتباط</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
